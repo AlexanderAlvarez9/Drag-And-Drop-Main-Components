@@ -1,0 +1,18 @@
+<ng-container cdkDropListGroup>
+	<div class="example-container">
+		<h2>Sidebar</h2>
+
+		<div cdkDropList #sidebarList="cdkDropList" [cdkDropListData]="sidebar" 
+			class="example-list" (cdkDropListDropped)="drop($event)">
+			<div class="example-box" cdkDrag>
+				<h1>titulo1</h1>
+			</div>
+			<div class="example-box" cdkDrag>
+			<h1>titulo2</h1>
+			</div>
+			<div class="example-box" cdkDrag>
+			<h1>titulo3</h1>
+			</div>
+		</div> 
+	</div>
+</ng-container>  
